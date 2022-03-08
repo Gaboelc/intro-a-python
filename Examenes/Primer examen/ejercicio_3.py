@@ -2,7 +2,7 @@ ciclo = 1
 contador_merienda, contador_no_merienda = 0, 0
 contador_transporte, contador_no_transporte = 0, 0
 contador_juego, contador_no_juego = 0, 0
-estaturas = 0
+estaturas, total_ninos = 0, 0
 while ciclo == 1:
     print("\n=====================================================================")
     print("¿Desea ingresar datos de un niño o ver los resultados de la escuela?")
