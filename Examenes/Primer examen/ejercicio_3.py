@@ -61,7 +61,11 @@ while ciclo == 1:
               contador_no_transporte, "no necesitan transporte.")
         print("De los", total_ninos, "niños,", contador_juego,"llevan algún tipo de juego y",
               contador_no_juego, "no llevan algún tipo de juego.")
-        print("Adicionalmete, el promedio de estatura entre los niños es de:", estaturas/total_ninos)
+        
+        if total_ninos == 0:
+            print("Adicionalmete, el promedio de estatura entre los niños es de: 0")
+        else:
+            print("Adicionalmete, el promedio de estatura entre los niños es de:", estaturas/total_ninos)
     
     print("\n¿Desea terminar el programa?")
     print("Ingrese 0 si desea terminarlo o 1 si desea continuar")
