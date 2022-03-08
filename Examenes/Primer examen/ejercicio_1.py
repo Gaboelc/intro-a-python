@@ -1,4 +1,5 @@
-while True:
+ciclo = 1
+while ciclo == 1:
     print("================================================================")
     print("Ingrese la edad del niño")
     edad_nino = int(input())
@@ -23,3 +24,10 @@ while True:
             total_descuento = total_no_descuento - (total_no_descuento*0.15)
             print("El total a pagar sin el descuento aplicado es de:", total_no_descuento)
             print("El total a pagar con el descuento aplicado de 15% es de:", total_descuento)
+        
+    print("\n¿Desea terminar el programa?")
+    print("Ingrese 0 si desea terminarlo o 1 si desea continuar")
+    
+    decision = int(input())
+    if decision == 0:
+        ciclo = 0

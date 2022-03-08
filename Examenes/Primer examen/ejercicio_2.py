@@ -1,4 +1,5 @@
-while True:
+ciclo = 1
+while ciclo == 1:
     print("")
     print("================================================================")
     print("Ingrese el radio del rectangulo")
@@ -14,3 +15,10 @@ while True:
     
     if perimetro > 50:
         print("Rectangulo muy grande")
+    
+    print("\n¿Desea terminar el programa?")
+    print("Ingrese 0 si desea terminarlo o 1 si desea continuar")
+    
+    decision = int(input())
+    if decision == 0:
+        ciclo = 0
