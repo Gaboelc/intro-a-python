@@ -14,6 +14,10 @@ import matplotlib.pyplot as plt # Libreria para graficar los datos
 import matplotlib.dates as mdates # Libreria para manerar fechas
 from matplotlib.dates import DateFormatter # Libreria para convertir fechas
 
+# Configuracion de las librerias
+from pandas.plotting import register_matplotlib_converters
+register_matplotlib_converters()
+
 # Variables
 decision = 0 # variable auxiliar para navegar dentro del menu
 
