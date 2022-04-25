@@ -6,12 +6,12 @@ print('Bienvenido al sistema de reporteria del Taller mecanico Fidelitas')
 print('--------------------------------------------------------\n')
 
 while True: # Ejecuta el programa de manera infinita
-    if decision != 1 or decision != 0:
-        print('--------------------------------------------------------\n')
+    if decision != '1' or decision != '0':
+        print('--------------------------------------------------------')
         print('Ingrese 1 si desea agregar un cliente nuevo o 0 si desea finalizar el programa')
-        decision = int(input())
+        decision = input()
         
-        if decision == 1:
+        if decision == '1':
             print('--------------------------------------------------------')
             print('Ingrese los datos del cliente nuevo')
             print('--------------------------------------------------------\n')
@@ -40,12 +40,12 @@ while True: # Ejecuta el programa de manera infinita
             
             remuneracion = coste_cliente-coste_empresa
             
-            with open('data\clientes.csv', 'a') as f:
-                f.write(f'\n{fecha},{cedula},{nombre},{apellido},{edad},{correo},{vehiculo},{marca},{anno},{coste_empresa},{coste_cliente},{remuneracion}')
+            with open('data\clientes.csv', 'a') as clientes:
+                clientes.write(f'\n{fecha},{cedula},{nombre},{apellido},{edad},{correo},{vehiculo},{marca},{anno},{coste_empresa},{coste_cliente},{remuneracion}')
                 
             print('\n--------------------------------------------------------')
             print('Cliente agregado a la base de datos!')
             print('--------------------------------------------------------\n')
             
-    if decision == 0:
+    if decision == '0':
         break
